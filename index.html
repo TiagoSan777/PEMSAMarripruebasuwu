@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="juegos-container">
+    <!-- Otros juegos existentes aquí -->
+
+    <!-- Juego de Rompecabezas con imagen -->
+    <div class="juego-tarjeta">
+      <button onclick="iniciarRompecabezas()">Jugar rompecabezas</button>
+      <div class="info-rompecabezas">
+        Tiempo: <span id="puzzle-time">0</span> segundos |
+        Piezas colocadas: <span id="puzzle-pieces">0</span> / 20
+      </div>
+      <div id="puzzle-container"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
