@@ -1,0 +1,31 @@
+
+#puzzle-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 20px auto;
+  border: 2px solid #333;
+  background-color: #f9f9f9;
+}
+
+.puzzle-piece {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url('assets/rompecabezas-bosque.png');
+  background-size: 400px 400px;
+  border: 1px solid #aaa;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  cursor: grab;
+  transition: transform 0.2s;
+  font-size: 0;
+}
+
+.puzzle-piece:active {
+  cursor: grabbing;
+}
+
+.info-rompecabezas {
+  text-align: center;
+  margin-top: 10px;
+}
